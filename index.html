@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Angel & Gavin — May 2, 2026</title>
+<meta name="description" content="The wedding of Angel Sims and Gavin Brazelton — Saturday, May 2, 2026. The Emerson Venue, Rossville, GA." />
+<meta property="og:title" content="Angel & Gavin — May 2, 2026" />
+<meta property="og:description" content="We should have connected sooner than we did. But we connected exactly when we were supposed to." />
+<meta property="og:image" content="photos/withjoy/cover-DSC04127.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #faf7f2;
+    --cream-2: #efe7d6;
+    --ink: #2c2a26;
+    --ink-soft: #5a564f;
+    --sage: #7a8c6f;
+    --sage-deep: #4f6049;
+    --gold: #b08d57;
+    --rose: #8c3a3a;
+    --line: #d8cfc0;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, system-ui, sans-serif;
+    color: var(--ink);
+    background: var(--cream);
+    line-height: 1.65;
+    font-weight: 300;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    color: var(--ink);
+  }
+  h1 { font-size: clamp(3rem, 9vw, 6.5rem); line-height: 1; font-weight: 400; }
+  h2 { font-size: clamp(2rem, 4.5vw, 3.2rem); line-height: 1.1; margin-bottom: 0.4em; }
+  h3 { font-size: 1.5rem; line-height: 1.2; margin-bottom: 0.4em; }
+  p { margin-bottom: 1em; }
+  a { color: var(--sage-deep); text-decoration: none; border-bottom: 1px solid var(--sage); transition: all 0.2s; }
+  a:hover { color: var(--rose); border-color: var(--rose); }
+
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+  .narrow { max-width: 720px; margin: 0 auto; }
+
+  /* Top nav */
+  nav.top {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(250, 247, 242, 0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+    padding: 0.75rem 0;
+  }
+  nav.top .nav-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    max-width: 1100px; margin: 0 auto; padding: 0 1.5rem;
+  }
+  nav.top .brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-style: italic;
+    color: var(--sage-deep);
+    border: none;
+  }
+  nav.top ul {
+    list-style: none; display: flex; gap: 1.6rem;
+    font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase;
+  }
+  nav.top ul a {
+    border: none; color: var(--ink-soft); font-weight: 500;
+  }
+  nav.top ul a:hover { color: var(--sage-deep); }
+  @media (max-width: 720px) { nav.top ul { display: none; } }
+
+  /* Hero */
+  .hero {
+    min-height: 92vh;
+    display: flex; align-items: center; justify-content: center;
+    text-align: center;
+    padding: 4rem 1.5rem 5rem;
+    background:
+      linear-gradient(rgba(250,247,242,0.3), rgba(250,247,242,0.85)),
+      url('photos/withjoy/cover-DSC04127.jpg') center/cover no-repeat;
+    position: relative;
+  }
+  .hero .ampersand {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(4rem, 10vw, 7rem);
+    color: var(--gold);
+    line-height: 1;
+    margin: -0.1em 0;
+  }
+  .hero .name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.6rem, 8vw, 5.5rem);
+    color: var(--ink);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+  }
+  .hero .meta {
+    margin-top: 2.5rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .hero .meta strong { color: var(--ink); font-weight: 500; }
+  .hero .meta-divider {
+    display: inline-block;
+    width: 1px; height: 0.9em; background: var(--line);
+    margin: 0 0.9rem; vertical-align: middle;
+  }
+  .hero .quote {
+    margin-top: 3rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(1.05rem, 2vw, 1.3rem);
+    color: var(--ink-soft);
+    max-width: 540px;
+  }
+  .hero .quote .signoff {
+    display: block; margin-top: 0.5rem;
+    font-style: normal; font-size: 0.8em; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--gold);
+  }
+
+  /* Countdown */
+  .countdown {
+    background: var(--cream-2);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .countdown .grid {
+    display: inline-flex; gap: 2rem; flex-wrap: wrap; justify-content: center;
+  }
+  .countdown .unit { min-width: 70px; }
+  .countdown .num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem; line-height: 1; color: var(--sage-deep); font-weight: 500;
+  }
+  .countdown .label {
+    font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--ink-soft); margin-top: 0.3rem;
+  }
+  .countdown .preface {
+    font-family: 'Cormorant Garamond', serif; font-style: italic;
+    font-size: 1.1rem; color: var(--ink-soft); margin-bottom: 1rem;
+  }
+
+  /* Sections */
+  section { padding: 6rem 0; }
+  section.alt { background: var(--cream-2); }
+  .section-eyebrow {
+    text-align: center;
+    font-size: 0.75rem; letter-spacing: 0.32em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 0.8rem; font-weight: 500;
+  }
+  .section-title {
+    text-align: center;
+    margin-bottom: 0.4em;
+  }
+  .section-rule {
+    width: 60px; height: 1px; background: var(--gold);
+    margin: 0 auto 3rem; opacity: 0.7;
+  }
+
+  /* Letter */
+  .letter {
+    background: #fff;
+    border: 1px solid var(--line);
+    padding: clamp(2rem, 5vw, 4rem);
+    max-width: 720px; margin: 2rem auto;
+    box-shadow: 0 1px 0 rgba(176, 141, 87, 0.15);
+    position: relative;
+  }
+  .letter::before {
+    content: ''; position: absolute; inset: 8px;
+    border: 1px solid var(--line); pointer-events: none;
+  }
+  .letter h3 {
+    font-style: italic; color: var(--sage-deep); margin-bottom: 1.5rem;
+  }
+  .letter p { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; line-height: 1.7; color: var(--ink); }
+  .letter .signature {
+    margin-top: 2rem;
+    font-family: 'Cormorant Garamond', serif; font-style: italic;
+    color: var(--gold); font-size: 1.1rem;
+  }
+
+  /* Story */
+  .story-quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.1rem, 2vw, 1.35rem);
+    line-height: 1.7;
+    color: var(--ink);
+    font-style: italic;
+  }
+  .story-quote p { margin-bottom: 1.2em; }
+  .story-quote .source {
+    display: block; text-align: center; margin-top: 1.5rem;
+    font-style: normal; font-size: 0.8rem; letter-spacing: 0.3em;
+    text-transform: uppercase; color: var(--gold);
+  }
+
+  /* Schedule cards */
+  .schedule-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;
+    margin-top: 2rem;
+  }
+  @media (max-width: 740px) {
+    .schedule-grid { grid-template-columns: 1fr; }
+  }
+  .event-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    padding: 2.5rem 2rem;
+    text-align: center;
+  }
+  .event-card .day {
+    font-size: 0.75rem; letter-spacing: 0.32em; text-transform: uppercase;
+    color: var(--gold); font-weight: 500;
+  }
+  .event-card h3 {
+    font-size: 1.8rem; margin: 0.6rem 0 0.4rem; color: var(--sage-deep);
+  }
+  .event-card .time {
+    font-family: 'Cormorant Garamond', serif; font-style: italic;
+    font-size: 1.1rem; color: var(--ink); margin-bottom: 1rem;
+  }
+  .event-card .venue { font-weight: 500; }
+  .event-card .address { color: var(--ink-soft); font-size: 0.9rem; margin-bottom: 1rem; }
+  .event-card .note {
+    font-family: 'Cormorant Garamond', serif; font-style: italic;
+    color: var(--ink-soft); font-size: 1rem;
+    border-top: 1px solid var(--line); padding-top: 1rem; margin-top: 1rem;
+  }
+
+  /* Photo gallery */
+  .gallery {
+    display: grid; grid-template-columns: repeat(12, 1fr); gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  .gallery figure {
+    position: relative; overflow: hidden;
+    background: var(--cream-2);
+  }
+  .gallery img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+    transition: transform 0.6s ease;
+  }
+  .gallery figure:hover img { transform: scale(1.04); }
+  .g-1 { grid-column: span 7; aspect-ratio: 4 / 3; }
+  .g-2 { grid-column: span 5; aspect-ratio: 4 / 5; }
+  .g-3 { grid-column: span 5; aspect-ratio: 4 / 5; }
+  .g-4 { grid-column: span 7; aspect-ratio: 4 / 3; }
+  @media (max-width: 740px) {
+    .gallery { grid-template-columns: 1fr 1fr; }
+    .g-1, .g-2, .g-3, .g-4 { grid-column: span 1; aspect-ratio: 1 / 1; }
+  }
+  .photo-credit {
+    text-align: center; font-size: 0.85rem; color: var(--ink-soft);
+    margin-top: 1.5rem; font-style: italic;
+  }
+
+  /* Wedding party */
+  .party-tabs {
+    text-align: center; margin-bottom: 2rem;
+  }
+  .party-side { margin-bottom: 4rem; }
+  .party-side h3 {
+    text-align: center; font-size: 2rem; color: var(--sage-deep); margin-bottom: 0.4rem;
+  }
+  .party-side .subtitle {
+    text-align: center; font-size: 0.8rem; letter-spacing: 0.3em;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 2rem;
+  }
+  .party-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.4rem;
+  }
+  .party-card {
+    background: #fff; border: 1px solid var(--line); padding: 1.4rem;
+  }
+  .party-card .role {
+    font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 0.3rem; font-weight: 500;
+  }
+  .party-card .name {
+    font-family: 'Cormorant Garamond', serif; font-size: 1.3rem;
+    color: var(--ink); margin-bottom: 0.5rem;
+  }
+  .party-card .cue {
+    font-size: 0.92rem; color: var(--ink-soft); line-height: 1.5;
+  }
+  .party-card.feature {
+    background: var(--sage-deep); color: var(--cream);
+  }
+  .party-card.feature .role { color: var(--cream-2); }
+  .party-card.feature .name { color: var(--cream); }
+  .party-card.feature .cue { color: var(--cream-2); }
+  .jace-card {
+    grid-column: 1 / -1;
+    background: linear-gradient(120deg, var(--cream-2), #fff);
+    border: 1px dashed var(--gold);
+    text-align: center; padding: 2rem;
+  }
+  .jace-card img {
+    max-width: 180px; border-radius: 50%;
+    border: 4px solid var(--cream); margin: 0 auto 1rem;
+  }
+
+  /* Travel */
+  .travel-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;
+    margin-top: 2rem;
+  }
+  @media (max-width: 740px) { .travel-grid { grid-template-columns: 1fr; } }
+  .travel-card {
+    padding: 2rem; background: #fff; border: 1px solid var(--line);
+  }
+  .travel-card h3 { color: var(--sage-deep); margin-bottom: 0.6rem; }
+  .travel-card .map {
+    display: block; margin-top: 1rem; font-size: 0.85rem;
+    letter-spacing: 0.2em; text-transform: uppercase;
+  }
+
+  /* Registry / app */
+  .cta-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;
+    margin-top: 2rem;
+  }
+  @media (max-width: 740px) { .cta-grid { grid-template-columns: 1fr; } }
+  .cta-card {
+    background: #fff; border: 1px solid var(--line); padding: 2.5rem 2rem;
+    text-align: center;
+  }
+  .cta-card h3 { color: var(--sage-deep); margin-bottom: 0.6rem; }
+  .cta-card p { color: var(--ink-soft); margin-bottom: 1.5rem; }
+  .btn {
+    display: inline-block; padding: 0.85rem 2rem;
+    background: var(--sage-deep); color: var(--cream); border: none;
+    font-size: 0.85rem; letter-spacing: 0.2em; text-transform: uppercase;
+    font-weight: 500;
+    transition: background 0.2s;
+  }
+  .btn:hover { background: var(--gold); color: var(--cream); }
+
+  /* Bridge / timeline */
+  .timeline {
+    max-width: 720px; margin: 2rem auto; position: relative;
+    padding-left: 2rem;
+  }
+  .timeline::before {
+    content: ''; position: absolute; left: 0; top: 0; bottom: 0;
+    width: 1px; background: var(--gold); opacity: 0.4;
+  }
+  .timeline .event {
+    position: relative; padding-bottom: 2rem;
+  }
+  .timeline .event::before {
+    content: ''; position: absolute; left: -2.4rem; top: 0.4rem;
+    width: 9px; height: 9px; border-radius: 50%;
+    background: var(--gold);
+  }
+  .timeline .event .when {
+    font-size: 0.75rem; letter-spacing: 0.25em; text-transform: uppercase;
+    color: var(--gold); font-weight: 500; margin-bottom: 0.3rem;
+  }
+  .timeline .event h4 {
+    font-family: 'Cormorant Garamond', serif; font-size: 1.3rem;
+    margin-bottom: 0.3rem; color: var(--ink);
+  }
+  .timeline .event p {
+    color: var(--ink-soft); font-size: 0.95rem; margin: 0;
+  }
+
+  /* Footer */
+  footer {
+    background: var(--ink);
+    color: var(--cream-2);
+    padding: 4rem 1.5rem 2rem;
+    text-align: center;
+  }
+  footer .ampersand {
+    font-family: 'Cormorant Garamond', serif; font-style: italic;
+    font-size: 3rem; color: var(--gold);
+  }
+  footer h4 {
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--cream); font-size: 1.5rem; margin: 0.5rem 0 1rem;
+  }
+  footer p { font-size: 0.9rem; color: var(--cream-2); opacity: 0.8; }
+  footer .built {
+    margin-top: 2.5rem; padding-top: 1.5rem;
+    border-top: 1px solid rgba(250, 247, 242, 0.15);
+    font-size: 0.8rem; opacity: 0.7;
+  }
+  footer .built a {
+    color: var(--gold); border-bottom-color: var(--gold);
+  }
+
+  /* Print */
+  @media print {
+    nav.top, .countdown { display: none; }
+    section { padding: 1.5rem 0; page-break-inside: avoid; }
+    .hero { min-height: auto; padding: 2rem 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="nav-inner">
+    <a href="#top" class="brand">A &amp; G</a>
+    <ul>
+      <li><a href="#story">Story</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#photos">Photos</a></li>
+      <li><a href="#party">Wedding Party</a></li>
+      <li><a href="#travel">Travel</a></li>
+      <li><a href="#registry">Registry</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header id="top" class="hero">
+  <div>
+    <div class="name">Angel</div>
+    <div class="ampersand">&amp;</div>
+    <div class="name">Gavin</div>
+    <div class="meta">
+      <strong>Saturday, May 2, 2026</strong>
+      <span class="meta-divider"></span>
+      Rossville, Georgia
+    </div>
+    <div class="quote">
+      &ldquo;We should have connected sooner than we did. But we connected exactly when we were supposed to.&rdquo;
+      <span class="signoff">— A + G</span>
+    </div>
+  </div>
+</header>
+
+<div class="countdown" id="countdown">
+  <div class="preface">Until we say <em>I do</em></div>
+  <div class="grid" id="countdownGrid">
+    <div class="unit"><div class="num" id="cd-days">—</div><div class="label">Days</div></div>
+    <div class="unit"><div class="num" id="cd-hours">—</div><div class="label">Hours</div></div>
+    <div class="unit"><div class="num" id="cd-mins">—</div><div class="label">Minutes</div></div>
+    <div class="unit"><div class="num" id="cd-secs">—</div><div class="label">Seconds</div></div>
+  </div>
+</div>
+
+<!-- WELCOME LETTER FROM SHANE -->
+<section id="welcome">
+  <div class="container">
+    <div class="section-eyebrow">A note from the father of the groom</div>
+    <h2 class="section-title">Welcome</h2>
+    <div class="section-rule"></div>
+    <article class="letter">
+      <h3>To everyone who showed up this weekend —</h3>
+      <p>
+        Thank you for being here. Some of you have known Gavin since
+        Hampton Cove, when he was a kid across the street from Trent
+        Conquest. Some of you met Angel in a Samford lecture hall, or
+        on the first day of law school, or the time she walked up to
+        you and decided you were going to be friends.
+      </p>
+      <p>
+        However you got here — whether you drove in from Birmingham
+        or Tuscaloosa, flew down from Alaska or in from Austin — you
+        belong in this room tonight. You're in the photos because
+        you're in the story.
+      </p>
+      <p>
+        Have a Coke. Eat the rehearsal dinner food. Cry at the first
+        dance. Then come find me and tell me how you know my son.
+      </p>
+      <div class="signature">— Shane Brazelton, father of the groom</div>
+    </article>
+  </div>
+</section>
+
+<!-- THEIR STORY -->
+<section id="story" class="alt">
+  <div class="container">
+    <div class="section-eyebrow">In their own words</div>
+    <h2 class="section-title">How We Met</h2>
+    <div class="section-rule"></div>
+    <div class="narrow story-quote">
+      <p>We should have connected sooner than we did.</p>
+      <p>
+        In 2021, when Angel was in law school, several of Gavin's friends
+        visited Tuscaloosa — Gavin had other plans and had to miss the trip.
+      </p>
+      <p>
+        In May 2023, we were both in a wedding for Alyssa and Cody Cook.
+        We chatted briefly but nothing of substance.
+      </p>
+      <p>
+        It wasn't until September 2023 when we officially talked for the
+        first time. While Gavin and Alyssa were at a wedding shower,
+        Alyssa was convinced that she had a match for Gavin. Not even
+        a full hour later, Gavin texted Angel for the first time.
+      </p>
+      <p>
+        Gavin made the first big move, inviting Angel to his birthday
+        celebration in Huntsville. The two of us talked for three hours
+        before Angel had to go. Gavin once again made a big move,
+        asking Angel to go on another date in Birmingham the next week.
+        We have been together ever since.
+      </p>
+      <p>
+        From our &ldquo;medium distance&rdquo; relationship to officially
+        making Birmingham our home, we have been inseparable
+        (even when Tennessee plays Alabama). And we can't wait
+        for what is to come.
+      </p>
+      <p>
+        So yeah, we should have connected sooner than we did.
+        But we connected <em>exactly</em> when we were supposed to.
+      </p>
+      <span class="source">— A + G</span>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE / THE BRIDGE -->
+<section id="bridge">
+  <div class="container">
+    <div class="section-eyebrow">The Bridge</div>
+    <h2 class="section-title">From Tuscaloosa to Birmingham</h2>
+    <div class="section-rule"></div>
+    <p class="narrow" style="text-align:center; margin-bottom: 2rem; color: var(--ink-soft);">
+      Cody Cook was Gavin's college roommate for two years. Alyssa Cook was Angel's law school 3L roommate. Cody married Alyssa in May 2023. And four months later, at a wedding shower, Alyssa decided she had a match for Gavin. That's the chain.
+    </p>
+    <div class="timeline">
+      <div class="event">
+        <div class="when">2021</div>
+        <h4>The near-miss in Tuscaloosa</h4>
+        <p>Gavin's friends visited Angel's law school town. Gavin had other plans. He didn't go.</p>
+      </div>
+      <div class="event">
+        <div class="when">May 2023</div>
+        <h4>The Cook wedding</h4>
+        <p>Both in Cody &amp; Alyssa's wedding. Brief chat. No spark yet.</p>
+      </div>
+      <div class="event">
+        <div class="when">September 2023</div>
+        <h4>The wedding shower &amp; the first text</h4>
+        <p>Alyssa decides she has a match for Gavin. Within an hour, Gavin texts Angel for the first time.</p>
+      </div>
+      <div class="event">
+        <div class="when">Gavin's birthday</div>
+        <h4>Three hours in Huntsville</h4>
+        <p>The first date. They talked for three hours before Angel had to go.</p>
+      </div>
+      <div class="event">
+        <div class="when">The next week</div>
+        <h4>Birmingham</h4>
+        <p>Gavin asks her on a second date. The &ldquo;medium distance&rdquo; era begins.</p>
+      </div>
+      <div class="event">
+        <div class="when">Now</div>
+        <h4>Home together in Birmingham</h4>
+        <p>Plus Jace, the black lab/pit who got listed in the wedding party as &ldquo;Our Son.&rdquo;</p>
+      </div>
+      <div class="event">
+        <div class="when">May 2, 2026</div>
+        <h4>The wedding day</h4>
+        <p>The Emerson Venue. 5:00 PM. Summer semi-formal. You.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCHEDULE -->
+<section id="schedule" class="alt">
+  <div class="container">
+    <div class="section-eyebrow">The Weekend</div>
+    <h2 class="section-title">Schedule</h2>
+    <div class="section-rule"></div>
+    <div class="schedule-grid">
+      <div class="event-card">
+        <div class="day">Friday — May 1, 2026</div>
+        <h3>Rehearsal Dinner</h3>
+        <div class="time">5:30 PM</div>
+        <div class="venue">Feed Table and Tavern</div>
+        <div class="address">West Main Street &middot; Chattanooga, TN<br>(Southside Historic District)</div>
+        <div class="note">&ldquo;Let's kick off the wedding celebrations with some of our favorite foods.&rdquo;</div>
+      </div>
+      <div class="event-card">
+        <div class="day">Saturday — May 2, 2026</div>
+        <h3>Ceremony &amp; Reception</h3>
+        <div class="time">5:00 PM Ceremony &middot; 5:30 – 8:30 PM Reception</div>
+        <div class="venue">The Emerson Venue</div>
+        <div class="address">North Avenue &middot; Rossville, GA<br>Just across the TN/GA line from Chattanooga</div>
+        <div class="note">Summer Semi-formal &middot; Send-off at 8:30 PM</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTOS -->
+<section id="photos">
+  <div class="container">
+    <div class="section-eyebrow">The proposal &amp; the engagement</div>
+    <h2 class="section-title">Photographs</h2>
+    <div class="section-rule"></div>
+    <div class="gallery">
+      <figure class="g-1"><img src="photos/withjoy/engagement-DSC03907.jpg" alt="Gavin and Angel — engagement photo"></figure>
+      <figure class="g-2"><img src="photos/withjoy/engagement-IMG_5218.jpg" alt="Gavin and Angel — engagement photo"></figure>
+      <figure class="g-3"><img src="photos/withjoy/engagement-IMG_5222.png" alt="Gavin and Angel — engagement photo"></figure>
+      <figure class="g-4"><img src="photos/withjoy/engagement-IMG_5226.png" alt="Gavin and Angel — engagement photo"></figure>
+    </div>
+    <p class="photo-credit">
+      Engagement photographs by <strong>Trent Conquest</strong> — groomsman, Emmy winner, and Gavin's friend since the summer before 3rd grade in Hampton Cove.
+    </p>
+  </div>
+</section>
+
+<!-- LETTER TO GAVIN AND ANGEL -->
+<section id="to-them" class="alt">
+  <div class="container">
+    <div class="section-eyebrow">A letter from Shane</div>
+    <h2 class="section-title">To Gavin &amp; Angel</h2>
+    <div class="section-rule"></div>
+    <article class="letter">
+      <h3>To my first-born and the woman he chose —</h3>
+      <p>
+        Gavin, I watched you grow up. From Hampton Cove to Samford
+        to wherever it is you and Angel decide to go from here, I have
+        had a front-row seat to the man you've become.
+      </p>
+      <p>
+        Angel, you walked into a family with five sons and made
+        the oldest one whole. You're the lawyer. You're the matchmaker's
+        match. You're a daughter now, and there's no provisional clause
+        in that — you're in.
+      </p>
+      <p>
+        Whatever we built before today gets handed to you both now.
+        Faith, family, the hard-earned kind of clarity that doesn't
+        come without a price. Take all of it. Build your own version.
+        Add to it. Hand it down.
+      </p>
+      <p>
+        And Jace — son of my son, the only black lab/pit ever listed in
+        a wedding party as &ldquo;Our Son&rdquo; — I see you too. Stop
+        stealing Michael Avery's snacks.
+      </p>
+      <div class="signature">— Dad</div>
+    </article>
+  </div>
+</section>
+
+<!-- WEDDING PARTY -->
+<section id="party">
+  <div class="container">
+    <div class="section-eyebrow">Twenty-four people. Plus Jace.</div>
+    <h2 class="section-title">The Wedding Party</h2>
+    <div class="section-rule"></div>
+
+    <div class="party-side">
+      <h3>Angel's Side</h3>
+      <div class="subtitle">Twelve</div>
+      <div class="party-grid">
+        <div class="party-card feature">
+          <div class="role">Bridesmaid &amp; Matchmaker</div>
+          <div class="name">Alyssa Cook</div>
+          <div class="cue">Walked up at law school orientation: &ldquo;I want to be friends with you.&rdquo; Married Cody. Decided Gavin was a match. Texted within the hour.</div>
+        </div>
+        <div class="party-card">
+          <div class="role">Bridesmaid</div>
+          <div class="name">Airiana Paris</div>
+          <div class="cue">Best friends since age 8. &ldquo;ParSims for life.&rdquo; Pickleholic.</div>
+        </div>
+        <div class="party-card">
+          <div class="role">Bridesman</div>
+          <div class="name">Jaleel Washington</div>
+          <div class="cue">Law school. Criminal Law, first semester. The first person to look at you when someone said something insane in class.</div>
+        </div>
+        <div class="party-card">
+          <div class="role">Bridesmaid</div>
+          <div class="name">Emily Muff</div>
+          <div class="cue">College breakdown sophomore year, COVID roommates. Angel was in her wedding too.</div>
+        </div>
+        <div class="party-card">
+          <div class="role">Bridesmaid</div>
+          <div class="name">Janie Rizos</div>
+          <div class="cue">Cried before a worship night and became instant best friends. Senior year roommate. Now in Alaska.</div>
+        </div>
+        <div class="party-card">
+          <div class="role">Bridesman</div>
+          <div class="name">James Hornsby</div>
+          <div class="cue">Samford SGA office. Commands a room, throws shade, encourages people.</div>
+        </div>
+        <div class="party-card">
+          <div class="role">Bridesmaid</div>
+          <div class="name">Olivia Pride</div>
+          <div class="cue">Adopted little sister. Singlehandedly decorated Angel's house and helped run the wedding.</div>
+        </div>
+        <div class="party-card">
+          <div class="role">Bridesmaid</div>
+          <div class="name">Alondra Hampton</div>
+          <div class="cue">Samford Ambassadors. Marco Polos about Jesus and hair care.</div>
+        </div>
+        <div class="party-card">
+          <div class="role">Bridesmaid</div>
+          <div class="name">Kaci Deakins</div>
+          <div class="cue">Powerhouse actress and comedian. Goes by Kaci Renee.</div>
+        </div>
+        <div class="party-card">
+          <div class="role">Bridesmaid</div>
+          <div class="name">Madison &ldquo;MadiMerk&rdquo; McNair</div>
+          <div class="cue">Communication Arts class freshman year. Christlike desire to love people and love justice.</div>
+        </div>
+        <div class="party-card">
+          <div class="role">Bridesmaid</div>
+          <div class="name">Anna Messersmith</div>
+          <div class="cue">Psych major study group. &ldquo;Seamlessly embodies the love of God.&rdquo;</div>
+        </div>
+        <div class="party-card">
+          <div class="role">Bridesmaid</div>
+          <div class="name">Abby-Shelton &ldquo;Shells&rdquo; Storey Malholtra</div>
+          <div class="cue">Angel literally paid her to do her makeup freshman year. Cast together in <em>The Niceties</em>.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="party-side">
+      <h3>Gavin's Side</h3>
+      <div class="subtitle">Twelve</div>
+      <div class="party-grid">
+        <div class="party-card feature">
+          <div class="role">Best Man</div>
+          <div class="name">Brock Pierce</div>
+          <div class="cue">High school handshake, locked in for life. Multiple 300 games (all his). To wake him up: cut the power to the fan.</div>
+        </div>
+        <div class="party-card">
+          <div class="role">Groomswoman &middot; Sister</div>
+          <div class="name">Zoe Pressnell</div>
+          <div class="cue">Living room dance routines. Endless Rock Band. Sharkboy and Lavagirl on repeat.</div>
+        </div>
+        <div class="party-card">
+          <div class="role">Groomsman</div>
+          <div class="name">Zach Councill</div>
+          <div class="cue">Last official roommate. Fortnite duo (the &ldquo;deleted itself&rdquo; excuse). Moved to Houston. Jace misses him.</div>
+        </div>
+        <div class="party-card">
+          <div class="role">Groomsman &middot; Cousin</div>
+          <div class="name">Houston Ragan</div>
+          <div class="cue">Family lake trips, deflating air mattresses (&ldquo;lucky for you, I weighed more&rdquo;), late-night Rocket League carries.</div>
+        </div>
+        <div class="party-card">
+          <div class="role">Groomswoman</div>
+          <div class="name">Mimi Salmon</div>
+          <div class="cue">High school side-by-side. Don't let her hold cookies. Always says yes to an adventure.</div>
+        </div>
+        <div class="party-card">
+          <div class="role">Groomsman</div>
+          <div class="name">Cody Cook</div>
+          <div class="cue">Two years roommates with Gavin. Married Alyssa — which is how Gavin met Angel. Marble shooting at porta-pottys.</div>
+        </div>
+        <div class="party-card">
+          <div class="role">Groomsman</div>
+          <div class="name">Chandler Hall</div>
+          <div class="cue">Met young, grew close through Brock. Late-night board games. Book club (Gavin's always behind). Dad to little Nancy.</div>
+        </div>
+        <div class="party-card">
+          <div class="role">Groomsman &middot; Engagement Photographer</div>
+          <div class="name">Trent Conquest</div>
+          <div class="cue">Friends since the summer before 3rd grade in Hampton Cove. Lived right across the street. Emmy winner. Took the engagement photos.</div>
+        </div>
+        <div class="party-card">
+          <div class="role">Groomsman</div>
+          <div class="name">Spencer MacLeod</div>
+          <div class="cue">Late nights at Makayla's. Gatorades at his place. Hand him a coffee or he'll fall asleep on a comfy couch.</div>
+        </div>
+        <div class="party-card">
+          <div class="role">Groomsman</div>
+          <div class="name">Nick Ford</div>
+          <div class="cue">Random freshman roommate → years-long friendship. Jumped into a freezing pool when Bama made the playoffs.</div>
+        </div>
+        <div class="party-card">
+          <div class="role">Groomsman</div>
+          <div class="name">Charlie Ford</div>
+          <div class="cue">Joined the college group later but felt like he'd always been there. Tim Tebow devotee. Now in Austin and missed.</div>
+        </div>
+        <div class="party-card">
+          <div class="role">Groomsman</div>
+          <div class="name">Michael Avery</div>
+          <div class="cue">The fifth roommate. Eventually senior-year actual roommate. Once had to chase Jace down for stolen Sweet treats.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="party-side">
+      <h3>Plus One</h3>
+      <div class="subtitle">The MVP</div>
+      <div class="party-grid">
+        <div class="jace-card">
+          <img src="photos/withjoy/jace-mvp.png" alt="Jace Brazelton — Our Son">
+          <div class="role" style="font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.3rem; font-weight: 500;">Our Son</div>
+          <div class="name" style="font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; color: var(--ink); margin-bottom: 0.5rem;">Jace Brazelton</div>
+          <div class="cue" style="max-width: 480px; margin: 0 auto; color: var(--ink-soft);">
+            Black lab/pit. Listed in the wedding party because that's exactly who he is. Best friends with most of the groomsmen. Stole Michael Avery's Sweet treats once.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRAVEL -->
+<section id="travel" class="alt">
+  <div class="container">
+    <div class="section-eyebrow">Getting there</div>
+    <h2 class="section-title">Travel &amp; Venues</h2>
+    <div class="section-rule"></div>
+    <div class="travel-grid">
+      <div class="travel-card">
+        <h3>Feed Table and Tavern</h3>
+        <p><strong>Friday Rehearsal Dinner</strong></p>
+        <p>West Main Street, Chattanooga, TN — Southside Historic District. About a two-hour drive from Hazel Green, AL.</p>
+        <a class="map" href="https://www.google.com/maps/search/?api=1&query=Feed+Table+and+Tavern+Chattanooga+TN" target="_blank" rel="noopener">Open in Maps →</a>
+      </div>
+      <div class="travel-card">
+        <h3>The Emerson Venue</h3>
+        <p><strong>Saturday Ceremony &amp; Reception</strong></p>
+        <p>North Avenue, Rossville, GA — just across the TN/GA line from Chattanooga.</p>
+        <a class="map" href="https://www.google.com/maps/search/?api=1&query=The+Emerson+Venue+Rossville+GA" target="_blank" rel="noopener">Open in Maps →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REGISTRY + APP -->
+<section id="registry">
+  <div class="container">
+    <div class="section-eyebrow">If you'd like</div>
+    <h2 class="section-title">Registry &amp; the Joy App</h2>
+    <div class="section-rule"></div>
+    <div class="cta-grid">
+      <div class="cta-card">
+        <h3>The Registry</h3>
+        <p>Whatever helps Angel and Gavin start the next chapter in Birmingham — set up by them, hosted by Joy.</p>
+        <a class="btn" href="https://withjoy.com/angel-and-gavin/registry" target="_blank" rel="noopener">Visit the registry</a>
+      </div>
+      <div class="cta-card">
+        <h3>The Joy Wedding App</h3>
+        <p>Live updates, the schedule on your phone, and a place to share photos from the day.</p>
+        <a class="btn" href="https://withjoy.com/angel-and-gavin/app" target="_blank" rel="noopener">Get the app</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="ampersand">&amp;</div>
+  <h4>Angel &amp; Gavin</h4>
+  <p>The Emerson Venue &middot; Rossville, GA &middot; May 2, 2026</p>
+  <p style="margin-top: 1rem; font-style: italic; font-family: 'Cormorant Garamond', serif; font-size: 1.1rem;">
+    &ldquo;We connected exactly when we were supposed to.&rdquo;
+  </p>
+  <div class="built">
+    <p>This page is a keepsake — built for Shane Brazelton, father of the groom, to remember every face and every name.</p>
+    <p style="margin-top: 0.5rem;">
+      The official wedding website &amp; registry are hosted by
+      <a href="https://withjoy.com" target="_blank" rel="noopener">Joy (withjoy.com)</a>
+      — find Angel &amp; Gavin's page at
+      <a href="https://withjoy.com/angel-and-gavin" target="_blank" rel="noopener">withjoy.com/angel-and-gavin</a>.
+    </p>
+  </div>
+</footer>
+
+<script>
+  // Countdown to ceremony: May 2, 2026 5:00 PM Eastern
+  // Rossville, GA is Eastern Time. 5pm ET = 21:00 UTC
+  const target = new Date('2026-05-02T21:00:00Z').getTime();
+  const elD = document.getElementById('cd-days');
+  const elH = document.getElementById('cd-hours');
+  const elM = document.getElementById('cd-mins');
+  const elS = document.getElementById('cd-secs');
+  function tick() {
+    const now = Date.now();
+    const diff = Math.max(0, target - now);
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const mins = Math.floor((diff / (1000 * 60)) % 60);
+    const secs = Math.floor((diff / 1000) % 60);
+    elD.textContent = String(days).padStart(2, '0');
+    elH.textContent = String(hours).padStart(2, '0');
+    elM.textContent = String(mins).padStart(2, '0');
+    elS.textContent = String(secs).padStart(2, '0');
+    if (diff === 0) {
+      document.querySelector('.countdown .preface').textContent = 'It’s here.';
+    }
+  }
+  tick();
+  setInterval(tick, 1000);
+</script>
+
+</body>
+</html>
