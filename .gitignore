@@ -1,0 +1,15 @@
+# Personal / family material — kept local only, never pushed to the public repo.
+# The public site (index.html) bakes in only what is meant to be public.
+
+CLAUDE.md
+docs/
+toast/
+memories/
+ingest/
+
+# Common
+.DS_Store
+.env
+.env.local
+node_modules/
+*.log
